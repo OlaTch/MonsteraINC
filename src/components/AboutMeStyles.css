@@ -1,0 +1,83 @@
+
+
+.aboutMe{
+    width: 100%;
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    background-color: #F4CBC9;
+    
+
+}
+
+.aboutMe .left{
+    text-align: justify;
+    margin: auto;
+    padding: 1rem 2rem;
+    max-width:600px;
+
+}
+
+.aboutMe .left p{
+    margin: 1.2rem 0;
+    color: #000;
+    text-align: justify;
+    
+}
+
+.aboutMe .left h1{
+    
+    color: #000;
+    text-align: left;
+    
+}
+
+.aboutMe .left .btn{
+    color: #000;
+    border: 1px solid #000;
+    font-family: 'Sofia Sans';
+}
+
+.aboutMe .right{
+   width: 100%;
+
+}
+
+.aboutMe .img-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.right .img{
+    max-width: 80%;
+        
+}
+
+
+.right .top{
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    padding-top: 20%;
+    z-index: 6;
+}
+
+.right .bottom{
+    grid-column: 4/ -1;
+    grid-row: 1;
+    z-index: 5;
+}
+
+
+@media screen and (max-width: 1140px){
+    .aboutMe{
+        grid-template-columns: 1fr;
+    }
+
+    .aboutMe .img{
+        max-width: 60%;
+    }
+}
